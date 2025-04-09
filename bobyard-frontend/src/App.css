@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 2vh;
+  max-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.comment-container {
+  background-color: #f9f9f9; 
+  padding: 20px; 
+  margin: 10px 0; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out;
+}
+
+.comment-container:hover {
+  background-color: #e0e0e0; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px); 
+}
+
+.comment-container h3 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.comment-container p {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #333; 
+}
+
+.comment-container p strong {
+  font-weight: bold;
+}
+
+.comment-container img {
+  margin-top: 10px;
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
